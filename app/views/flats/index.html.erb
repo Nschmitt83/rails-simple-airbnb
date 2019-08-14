@@ -8,9 +8,13 @@
   </form>
 </nav>
 
-
 <% @flats.each do |flat| %>
-  <h2><%= link_to flat.name, flat_path(id: flat.id)%></h2>
-  <p><%= flat.description %></p>
+<div class="card-product">
+  <img src="https://source.unsplash.com/100x120/?city" alt="image random">
+  <div class="product_description">
+    <h2><%= link_to flat.name, flat_path(id: flat.id)%></h2>
+    <p><%= flat.description %></p>
+  </div>
+</div>
 <% end %>
 <%= link_to "+ Add a new flat", new_flat_path %>

@@ -1,0 +1,71 @@
+// Graphical variables
+@import "config/fonts";
+@import "config/colors";
+@import "config/bootstrap_variables";
+
+// External libraries
+@import "bootstrap/scss/bootstrap";
+// @import "font-awesome-sprockets";
+// @import "font-awesome";
+
+// Your CSS partials
+@import "components/index";
+@import "pages/index";
+
+li {
+  display: inline;
+  text-align: center;
+  padding: 10px ;
+  margin: 0;
+  width: 30px;
+  border: solid 0.2mm #5f09f4;
+  background-color: #009ADA;
+  box-shadow: 0.5px 0.5px 0.5px;
+  font-weight: 900;
+  color: white;
+  font-size: 2rem;
+    }
+li:hover {
+  border: solid 0.6mm #5f09f4;
+  box-shadow: 10px 10px 10px;
+    }
+
+ul{
+  display: inline;
+  width: 30px;
+  text-align: center;
+
+}
+h1 {
+  color: #727272;
+  text-align: center;
+  margin: auto;
+  padding-top: 30px;
+
+}
+h2 {
+  padding-top: 20px;
+}
+form {
+  padding-top: 30px;
+  text-align: center;
+}
+.card-product{
+  width: 100%;
+  height: 120px;
+  margin: auto;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  font-size: 1.1rem;
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 20px;
+}
+
+.product_description{
+  flex-grow: 1;
+  padding-left: 10px;
+  max-width: 85%;
+}
