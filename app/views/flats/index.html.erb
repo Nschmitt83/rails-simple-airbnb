@@ -1,0 +1,16 @@
+<nav class="navbar navbar-light bg-light">
+  <h1>SIMPLE AIRBNB</h1>
+</nav>
+
+<nav class="navbar navbar-light bg-light">
+  <form class="form-inline">
+    <button class="btn btn-outline-warning" type="button"><%= link_to "Add a new flat", new_flat_path %></button>
+  </form>
+</nav>
+
+
+<% @flats.each do |flat| %>
+  <h2><%= link_to flat.name, flat_path(id: flat.id)%></h2>
+  <p><%= flat.description %></p>
+<% end %>
+<%= link_to "+ Add a new flat", new_flat_path %>

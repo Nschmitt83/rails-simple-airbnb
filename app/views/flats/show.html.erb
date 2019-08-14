@@ -1,0 +1,13 @@
+<h2><%= @flat.name %></h2>
+<p><%= @flat.address %></p>
+<p><%= @flat.description %></p>
+<p><%= @flat.price_per_night %></p>
+<p><%= @flat.number_of_guests %></p>
+
+
+<button class="btn btn-outline-danger" type="button"><%= link_to "Delete", flat_path(@flat),
+      method: :delete,
+      data: { confirm: "Are you sure?" } %></button>
+<button class="btn btn-outline-info" type="button"><%= link_to "back to list", flats_path %></button>
+<button class="btn btn-outline-success" type="button">
+<%= link_to "edit flat", edit_flat_path(@flat) %></button>
